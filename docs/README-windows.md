@@ -40,6 +40,24 @@ ruby -e "puts 'Hello, Ruby!'"
 bundle install
 ```
 
+## 7. SQlite のインストール
+
+https://sqlite.org/download.html から お使いのCPUアーキテクチャに合わせたzipファイルをダウンロードします。
+
+Intel CPUなどはsqlite-dll-win-x64-xxxxx.zip を選択してください。
+
+![](./imgs/sqlite_download.png)
+
+解凍したsqlite3.dllを `C:\Ruby34-x64\bin` に移動します。
+
+gemのsqliteを再インストール
+
+```
+gem uninstall sqlite3
+gem install sqlite3 --platform=ruby
+```
+
+
 ここまでできたら Railway に挑戦しましょう！
 
 ## トラブルシューティング
